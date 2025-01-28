@@ -16,7 +16,7 @@ const LatestIT = () => {
           <div className="flex-shrink-0 card-compact w-80 sm:w-full bg-base-100 drop-shadow-lg h-full flex flex-col">
             <figure>
               <img
-                src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/page/uber/011625-dtw25-early-reg-480x360.jpg?wid=480&amp;hei=360"
+                src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/page/uber/121224-dell-newsroom-480x360.jpg?wid=480&amp;hei=360"
                 alt="Shoes"
                 className="w-full"
               />
@@ -24,8 +24,8 @@ const LatestIT = () => {
             <div className="card-body bg-ombase text-white flex flex-col justify-between">
               <h2 className="card-title">Shoes!</h2>
               <p className="truncate">
-                Register early for Dell Technologies World to save $200 and get
-                your free gift!
+                Register early for Technologies World to save $200 and get your
+                free gift!
               </p>
               <div className="card-actions justify-end">
                 <button className="btn btn-outline text-white">
@@ -66,7 +66,7 @@ const LatestIT = () => {
             </figure>
             <div className="card-body bg-ombase text-white flex flex-col justify-between">
               <h2 className="card-title">Shoes!</h2>
-              <p>Dell Technologies Events</p>
+              <p>Technologies Events</p>
               <div className="card-actions justify-end">
                 <button className="btn btn-outline text-white">
                   Explore &gt;

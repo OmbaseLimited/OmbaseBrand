@@ -149,9 +149,11 @@ const OMBASENAVBAR = () => {
 
         {/* Navbar Links Section */}
         <div className="flex space-x-6 items-center">
-          <a href="#" className="text-gray-800 hover:text-blue-600">
-            Home
-          </a>
+          <Link to="/">
+            <a href="#" className="text-gray-800 hover:text-blue-600">
+              Home
+            </a>
+          </Link>
 
           <button
             onClick={() => setIsMegaMenuOpen(!isMegaMenuOpen)}
