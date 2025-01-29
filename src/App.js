@@ -14,15 +14,15 @@ const Main = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Ombase />} />
-        <Route path="/ContactUS" element={<ContactUs />} />
+        <Route path="/" element={<AarivServer />} />
+        {/* <Route path="/ContactUS" element={<ContactUs />} />
         <Route path="/multiselect" element={<MultiSelectDropdown />} />
         <Route path="/IPBook" element={<IPBook />} />
         <Route path="/AarivServer" element={<AarivServer />} />
         <Route path="/IPCentre" element={<IPCentre />} />
         <Route path="/IPStation" element={<IPStation />} />
         <Route path="/MiniPc" element={<MiniPc />} />
-        <Route path="/Workstation" element={<Workstation />} />
+        <Route path="/Workstation" element={<Workstation />} /> */}
       </Routes>
     </BrowserRouter>
   );
