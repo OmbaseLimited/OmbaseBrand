@@ -25,8 +25,9 @@ const CaseStudies = () => {
               Financial Services
             </p>
             <span className="text-xs text-white">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Voluptas, doloribus.
+              A versatile tech OEM crafting an extensive array of computing
+              devices, from desktops and Chromebooks to all-in-ones, laptops,
+              workstations.
             </span>
             <button className="btn btn-outline btn-xs sm:btn-lg sm:text-[12px] w-fit text-white hover:bg-white hover:text-ombase">
               Click to know more &gt;
@@ -43,8 +44,9 @@ const CaseStudies = () => {
               Financial Services
             </p>
             <span className="text-xs text-white">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Voluptas, doloribus.
+              A versatile tech OEM crafting an extensive array of computing
+              devices, from desktops and Chromebooks to all-in-ones, laptops,
+              workstations.
             </span>
             <button className="btn btn-outline btn-xs sm:btn-lg sm:text-[12px] w-fit text-white hover:bg-white hover:text-ombase">
               Click to know more &gt;
@@ -63,8 +65,9 @@ const CaseStudies = () => {
               Financial Services
             </p>
             <span className="text-xs text-white">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Voluptas, doloribus.
+              A versatile tech OEM crafting an extensive array of computing
+              devices, from desktops and Chromebooks to all-in-ones, laptops,
+              workstations.
             </span>
             <button className="btn btn-outline  btn-xs sm:btn-lg sm:text-[12px] w-fit text-white hover:bg-white hover:text-ombase">
               Click to know more &gt;
@@ -81,8 +84,9 @@ const CaseStudies = () => {
               Financial Services
             </p>
             <span className="text-xs text-white">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Voluptas, doloribus.
+              A versatile tech OEM crafting an extensive array of computing
+              devices, from desktops and Chromebooks to all-in-ones, laptops,
+              workstations.
             </span>
             <button className="btn btn-outline btn-xs sm:btn-lg sm:text-[12px] w-fit text-white hover:bg-white hover:text-ombase">
               Click to know more &gt;

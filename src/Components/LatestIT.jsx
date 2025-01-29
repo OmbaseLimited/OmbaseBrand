@@ -22,10 +22,11 @@ const LatestIT = () => {
               />
             </figure>
             <div className="card-body bg-ombase text-white flex flex-col justify-between">
-              <h2 className="card-title">Shoes!</h2>
-              <p className="truncate">
-                Register early for Technologies World to save $200 and get your
-                free gift!
+              <h2 className="card-title">Ombase</h2>
+              <p>
+                A versatile tech OEM crafting an extensive array of computing
+                devices, from desktops and Chromebooks to all-in-ones, laptops,
+                workstations.
               </p>
               <div className="card-actions justify-end">
                 <button className="btn btn-outline text-white">
@@ -45,8 +46,12 @@ const LatestIT = () => {
               />
             </figure>
             <div className="card-body bg-ombase text-white flex flex-col justify-between">
-              <h2 className="card-title">Shoes!</h2>
-              <p>View Newsroom</p>
+              <h2 className="card-title">Ombase</h2>
+              <p>
+                A versatile tech OEM crafting an extensive array of computing
+                devices, from desktops and Chromebooks to all-in-ones, laptops,
+                workstations.
+              </p>
               <div className="card-actions justify-end">
                 <button className="btn btn-outline text-white">
                   Explore &gt;
@@ -65,8 +70,12 @@ const LatestIT = () => {
               />
             </figure>
             <div className="card-body bg-ombase text-white flex flex-col justify-between">
-              <h2 className="card-title">Shoes!</h2>
-              <p>Technologies Events</p>
+              <h2 className="card-title">Ombase</h2>
+              <p>
+                A versatile tech OEM crafting an extensive array of computing
+                devices, from desktops and Chromebooks to all-in-ones, laptops,
+                workstations.
+              </p>
               <div className="card-actions justify-end">
                 <button className="btn btn-outline text-white">
                   Explore &gt;
@@ -85,8 +94,12 @@ const LatestIT = () => {
               />
             </figure>
             <div className="card-body bg-ombase text-white flex flex-col justify-between">
-              <h2 className="card-title">Shoes!</h2>
-              <p>Our Purpose in Action</p>
+              <h2 className="card-title">Ombase</h2>
+              <p>
+                A versatile tech OEM crafting an extensive array of computing
+                devices, from desktops and Chromebooks to all-in-ones, laptops,
+                workstations.
+              </p>
               <div className="card-actions justify-end">
                 <button className="btn btn-outline text-white">
                   Explore &gt;

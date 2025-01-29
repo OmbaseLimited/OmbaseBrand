@@ -139,7 +139,7 @@ const OMBASENAVBAR = () => {
       {/* Navbar Container */}
       <div className="flex justify-between items-center w-full h-full bg-white shadow-md">
         {/* Logo Section */}
-        <div className="flex items-center">
+        <div className="flex items-center justify-between">
           <img
             src={OmbaseLogo}
             alt="Ombase Logo"
@@ -149,22 +149,22 @@ const OMBASENAVBAR = () => {
 
         {/* Navbar Links Section */}
         <div className="flex space-x-6 items-center">
-          <Link to="/">
-            <a href="#" className="text-gray-800 hover:text-blue-600">
-              Home
-            </a>
-          </Link>
-
-          <button
+          {/* <button
             onClick={() => setIsMegaMenuOpen(!isMegaMenuOpen)}
             className="text-gray-800 hover:text-blue-600"
           >
-            Menu
+            Our Compnay
           </button>
 
           <Link to="/ContactUS" className="text-gray-800 hover:text-blue-600">
             Contact
           </Link>
+
+          <Link to="/AarivServer">
+            <button className="btn">Aariv Server</button>
+          </Link> */}
+          <p>Contact Us:</p>
+          +91-1800-267-1919
         </div>
       </div>
 

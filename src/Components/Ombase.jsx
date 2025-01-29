@@ -10,6 +10,7 @@ import LatestIT from "../Components/LatestIT";
 import CaseStudies from "../Components/CaseStudies";
 import PartnerPortal from "../Components/PartnerPortal";
 import Footer from "../Components/Footer";
+import AarivServer from "./AarivServer";
 function Ombase() {
   useEffect(() => {
     // Disable right-click (context menu)

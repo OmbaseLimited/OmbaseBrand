@@ -10,7 +10,8 @@ const CoverPage = () => {
   return (
     <div className="rounded-s-lg w-full h-full bg-gradient-to-r from-slate-600 py-10 px-2 ">
       <p className="text-xs sm:text-lg">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, est.
+        A versatile tech OEM crafting an extensive array of computing devices,
+        from desktops and Chromebooks to all-in-ones, laptops, workstations.
       </p>
     </div>
   );
