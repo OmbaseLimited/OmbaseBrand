@@ -1,17 +1,14 @@
-const flowbite = require("flowbite-react/tailwind");
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   daisyui: {
     themes: ["light", "dark"],
-    darkTheme: "light", // Correct key for specifying the default dark theme
+    darkTheme: "light",
   },
 
   content: [
     "./src/**/*.{js,jsx}",
     "./public/index.html",
     "./node_modules/tw-elements-react/dist/**/*.{js,jsx,ts,tsx}",
-    flowbite.content(),
   ],
   theme: {
     extend: {
@@ -20,7 +17,16 @@ module.exports = {
         ombaseBg: "#dadfe7",
         ombaseFaintBg: "#f3f4f7",
       },
+      animation: {
+        marquee: "marquee 15s linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(100%)" },
+        },
+      },
     },
   },
-  plugins: [require("daisyui"), flowbite.plugin()],
+  plugins: [require("daisyui")],
 };

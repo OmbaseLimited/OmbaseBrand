@@ -31,6 +31,28 @@ const AarivServer = () => {
       <div className="w-full h-[6%] bg-ombase overflow-hidden">
         <OMBASENAVBAR />
       </div>
+      <div class="w-full border-2 overflow-hidden whitespace-nowrap bg-red-500 text-white py-4 flex gap-10">
+        {/* <span class="w-full inline-block  text-xl font-bold animate-marquee">
+          Website under upgradation
+        </span>
+        <span class="w-full inline-block  text-xl font-bold animate-marquee">
+          Website under upgradation
+        </span>
+        <span class="w-full inline-block  text-xl font-bold animate-marquee">
+          Website under upgradation
+        </span>
+        <span class="w-full inline-block  text-xl font-bold animate-marquee">
+          Website under upgradation
+        </span> */}
+        <marquee  direction="left" scrollamount="10" class="text-xl font-bold text-white">
+        Website under upgradation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Website under upgradation
+        
+</marquee>
+
+      </div>
+     
+
       <div className="w-full h-[94%] md:p-10 ">
         <div className="w-full h-full rounded flex flex-col lg:flex-row justify-center items-center">
           <div className="w-full lg:w-[40%] h-[50%] md:h-[60%] lg:h-full flex justify-center items-center">
@@ -487,8 +509,8 @@ const AarivServer = () => {
         <div className="w-2/6 h-full ">
           <img src={eye} alt="EyeLogo" className="w-full h-full rounded" />
         </div>
-      </div> */}
-      {/* <div className="w-full h-[30%] border-2"><Footer /></div> */}
+      // </div> */}
+ <div className="w-full h-[30%] border-2"><Footer /></div>
     </div>
   );
 };
