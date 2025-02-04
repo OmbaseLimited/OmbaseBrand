@@ -510,7 +510,7 @@ const AarivServer = () => {
           <img src={eye} alt="EyeLogo" className="w-full h-full rounded" />
         </div>
       // </div> */}
- <div className="w-full h-[30%] border-2"><Footer /></div>
+ <div className="w-full h-[30%] border-2 hidden md:block"><Footer /></div>
     </div>
   );
 };

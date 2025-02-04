@@ -6,14 +6,14 @@ import Instagram from "../Assets/instagram.svg";
 
 const Footer = () => {
   return (
-    <div className="w-full h-full bg-ombaseFaintBg p-10 ">
+    <div className="w-full h-full bg-ombaseFaintBg p-10">
       <div className="w-full h-full flex flex-col sm:flex-row items-center gap-2  text-black">
-        <div className="w-full sm:w-1/6 h-[250px] flex items-center justify-center  gap-6">
+        <div className="w-full sm:w-1/6 h-[100%] flex items-center justify-center  gap-6">
           <img src={ombaseLogo} alt="Ombase Logo" className="h-[70%]" />
           <hr className="w-[0.1px] h-[60%] border-none outline-none bg-ombase" />
         </div>
-        <div className="w-full sm:w-5/6 h-[250px] flex flex-col items-stretch justify-between ">
-          <div className="w-full flex space-x-6 overflow-hidden">
+        <div className="w-full sm:w-5/6 h-[100%] flex flex-col items-stretch justify-between gap-2">
+          <div className="w-full flex space-x-6 overflow-hidden text-sm">
             <div>
               <p>Company Overview</p>
             </div>
