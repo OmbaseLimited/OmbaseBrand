@@ -12,19 +12,23 @@ const ContactUs = () => {
   };
   return (
     <div className="w-full h-full">
-      <div className="w-full h-[6%]  bg-ombase overflow-hidden">
+      {/* <div className="w-full h-[6%]  bg-ombase overflow-hidden">
         <OMBASENAVBAR />
-      </div>
+      </div> */}
       <div
-        className="w-full h-[64%] flex justify-center items-center  bg-cover bg-no-repeat"
+        className="w-full h-full flex justify-center items-center p-5 bg-cover bg-no-repeat"
         // style={{ backgroundImage: `url(${dna})` }}
       >
-        <div className="w-[65%] h-[80%]">
+      {/* <div
+        className="w-full h-[64%] border border-red-500 flex justify-center items-center p-5 bg-cover bg-no-repeat"
+        // style={{ backgroundImage: `url(${dna})` }}
+      > */}
+        <div className="w-full md:w-full md:h-full lg:w-[65%] lg:h-[80%] ">
           <div className="w-full h-full mx-auto ">
-            <div className="w-fit h-[80px] mb-4 flex space-x-4 p-2 bg-white border-[1px] border-ombase rounded-lg ">
+            <div className="w-full h-[60px] mb-4 p-2 flex md:space-x-4 py-2 lg:p-2 bg-white border border-ombase rounded-lg shadow-m ">
               <button
                 onClick={() => setOpenTab(1)}
-                className={`flex-1 text-nowrap  py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300 ${
+                className={`flex-1 text-nowrap px-1 py-2 rounded-md focus:outline-none focus:shadow-outline-blue transition-all text-center duration-300 text-[8px] md:text-[14px] w-fit overflow-hidden ${
                   openTab === 1 ? "bg-ombase text-white" : ""
                 }`}
               >
@@ -32,7 +36,7 @@ const ContactUs = () => {
               </button>
               <button
                 onClick={() => setOpenTab(2)}
-                className={`flex-1 text-nowrap py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300 ${
+                className={`flex-1 text-nowrap px-1 py-2 rounded-md focus:outline-none focus:shadow-outline-blue transition-all text-center duration-300 text-[8px] md:text-[14px] w-fit overflow-hidden ${
                   openTab === 2 ? "bg-ombase text-white" : ""
                 }`}
               >
@@ -40,44 +44,43 @@ const ContactUs = () => {
               </button>
               <button
                 onClick={() => setOpenTab(3)}
-                className={`flex-1 py-2 px-4 text-nowrap rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300 ${
+                className={`flex-1 text-nowrap px-1 py-2 rounded-md focus:outline-none focus:shadow-outline-blue transition-all text-center duration-300 text-[8px] md:text-[14px] w-fit overflow-hidden ${
                   openTab === 3 ? "bg-ombase text-white" : ""
                 }`}
               >
                 Check Warranty
               </button>
             </div>
-
             {/* Section 1 Content */}
             {openTab === 1 && (
               <div className="w-ful h-[calc(100%-80px)] transition-all duration-300 bg-gradient-to-s from-white from-80% p-4 rounded-lg  border-[1px] border-white  flex justify-around">
                 <div className="w-full h-full flex flex-col items-center justify-center">
-                  <div className="w-full h-[90%] flex justify-center items-center">
-                    <div className="w-1/2 h-full flex flex-col items-center justify-center ">
+                  <div className="w-full h-[90%] flex flex-col md:flex-row justify-center items-center gap-5 md:gap-0">
+                    <div className="w-full md:w-1/3 h-full flex flex-col items-center justify-center ">
                       <div className="w-full h-full flex flex-col justify-center items-center">
                         <h2 className="w-full h-[10%] font-semibold mb-2 text-ombase">
-                          <p className="text-3xl font-bold flex">
-                            Get in touch <p className="text-4xl">👋</p>
+                          <p className="text-xl md:text-3xl font-bold flex">
+                            Get in touch <p className="text-xl md:text-4xl">👋</p>
                           </p>
                         </h2>
                         <div className="w-full h-full flex flex-col justify-center ">
-                          <p className="font-bold text-black">Whatsapp</p>
-                          <p className="text-ombase">+91 1800-267-1919</p>
+                          <p className="text-sm md:text-3xl font-bold text-black">Whatsapp</p>
+                          <p className="text-[10px] md:text-lg text-ombase">+91 1800-267-1919</p>
                         </div>
                         <div className="w-full h-full flex flex-col justify-center ">
-                          <p className="font-bold text-black">Location</p>
-                          <p className="text-ombase">Sr 32/6 Narhe, Pune</p>
-                          <p className="text-ombase">
+                          <p className="text-sm md:text-3xl font-bold text-black">Location</p>
+                          <p className="text-[10px] md:text-lg text-ombase">Sr 32/6 Narhe, Pune</p>
+                          <p className="text-[10px] md:text-lg text-ombase">
                             Pune Head Office <br /> India - 411041
                           </p>
                         </div>
                         <div className="w-full h-full flex flex-col justify-center ">
-                          <p className="font-bold text-black">Email</p>
-                          <p className="text-ombase">sales@ombase.in</p>
+                          <p className="text-sm md:text-3xl font-bold text-black">Email</p>
+                          <p className="text-[10px] md:text-lg text-ombase">sales@ombase.in</p>
                         </div>
                       </div>
                     </div>
-                    <div className="w-1/2 h-full flex justify-center items-center border-[1px] border-ombase rounded-xl">
+                    <div className="w-full md:w-2/3 h-full flex justify-center items-center border-[1px] border-ombase rounded-xl">
                       <div className="w-[60%] h-full ">
                         {" "}
                         <form
@@ -89,23 +92,23 @@ const ContactUs = () => {
                           <input
                             type="text"
                             placeholder="Enter Full Name"
-                            className="w-[100%] border-0 border-b-[1px] border-ombase outline-none"
+                            className="w-[100%] outline-none input input-bordered input-sm md:input-md placeholder:text-[8px] md:placeholder:text-[10px] lg:placeholder:text-[14px]"
                           />
                           <input
                             type="text"
                             placeholder="Enter Email ID"
-                            className="w-[100%] border-0 border-b-[1px] border-ombase outline-none"
+                            className="w-[100%] outline-none input input-bordered input-sm md:input-md placeholder:text-[8px] md:placeholder:text-[10px] lg:placeholder:text-[14px]"
                           />
                           <input
                             type="text"
                             placeholder="Enter Phone"
-                            className="w-[100%] border-0 border-b-[1px] border-ombase outline-none"
+                            className="w-[100%] outline-none input input-bordered input-sm md:input-md placeholder:text-[8px] md:placeholder:text-[10px] lg:placeholder:text-[14px]"
                           />
 
                           <MultiSelectDropdown options={dropdownOptions} />
                           <br />
                           <div className="w-full flex justify-center items-center">
-                            <button className="btn bg-white text-ombase shadow-lg border-[1px] border-ombase w-fit hover:bg-ombase hover:text-white">
+                            <button className="btn btn-sm md:btn-wide text-[8px] bg-white text-ombase shadow-lg border-[1px] border-ombase w-fit hover:bg-ombase hover:text-white">
                               Send Enquiry
                             </button>
                           </div>
@@ -120,229 +123,9 @@ const ContactUs = () => {
                       </div>
                     </div>
                   </div>
-                  {/* <form
-                    method="post"
-                    className="flex flex-col justify-around items-center w-[95%] h-[90%] gap-2"
-                  >
-                    <div className="w-full h-full gap-2 flex justify-center items-center">
-                      <div className="w-[100%] h-full flex flex-col justify-center items-center">
-                        <label
-                          htmlFor="gstin"
-                          className="w-full block text-sm font-medium text-ombase  "
-                        >
-                          GSTIN No.
-                        </label>
-                        <input
-                          type="text"
-                          id="gstin"
-                          name="gst"
-                          maxLength={15}
-                          pattern="^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$"
-                          title="Invalid GST Number."
-                          className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
-                          placeholder="Enter GSTIN number"
-                        />
-                      </div>
-                      <div className="w-[100%] h-full flex flex-col justify-center items-center">
-                        <label
-                          htmlFor="gstin"
-                          className="w-full block text-sm font-medium text-ombase  "
-                        >
-                          PAN No.
-                        </label>
-                        <input
-                          type="text"
-                          id="gstin"
-                          name="gst"
-                          maxLength={15}
-                          pattern="^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$"
-                          title="Invalid GST Number."
-                          className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
-                          placeholder="Enter GSTIN number"
-                        />
-                      </div>
-                      <div className="w-full h-full flex flex-col justify-center items-center">
-                        <label
-                          htmlFor="gstin"
-                          className="w-full block text-sm font-medium text-ombase  "
-                        >
-                          Entity Type
-                        </label>
-                        <input
-                          type="text"
-                          id="gstin"
-                          name="gst"
-                          maxLength={15}
-                          pattern="^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$"
-                          title="Invalid GST Number."
-                          className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
-                          placeholder="Enter GSTIN number"
-                        />
-                      </div>
-                    </div>
-
-                    <div className="w-full h-full gap-2 flex justify-center items-center">
-                      <div className="w-full h-full flex flex-col justify-center items-center">
-                        <label
-                          htmlFor="gstin"
-                          className="w-full block text-sm font-medium text-ombase  "
-                        >
-                          Company Name
-                        </label>
-                        <input
-                          type="text"
-                          id="gstin"
-                          name="gst"
-                          maxLength={15}
-                          pattern="^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$"
-                          title="Invalid GST Number."
-                          className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
-                          placeholder="Enter GSTIN number"
-                        />
-                      </div>
-                      <div className="w-full h-full flex flex-col justify-center items-center">
-                        <label
-                          htmlFor="gstin"
-                          className="w-full block text-sm font-medium text-ombase  "
-                        >
-                          Legal Name
-                        </label>
-                        <input
-                          type="text"
-                          id="gstin"
-                          name="gst"
-                          maxLength={15}
-                          pattern="^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$"
-                          title="Invalid GST Number."
-                          className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
-                          placeholder="Enter GSTIN number"
-                        />
-                      </div>
-                    </div>
-                    <div className="w-full h-full gap-2 flex justify-center items-center">
-                      <div className="w-full h-full flex flex-col justify-center items-center">
-                        <label
-                          htmlFor="gstin"
-                          className="w-full block text-sm font-medium text-ombase  "
-                        >
-                          Address
-                        </label>
-                        <input
-                          type="text"
-                          id="gstin"
-                          name="gst"
-                          maxLength={15}
-                          pattern="^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$"
-                          title="Invalid GST Number."
-                          className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
-                          placeholder="Enter GSTIN number"
-                        />
-                      </div>
-                    </div>
-                    <div className="w-full h-full gap-2 flex justify-center items-center">
-                      <div className="w-full h-full flex flex-col justify-center items-center">
-                        <label
-                          htmlFor="gstin"
-                          className="w-full block text-sm font-medium text-ombase  "
-                        >
-                          State
-                        </label>
-                        <input
-                          type="text"
-                          id="gstin"
-                          name="gst"
-                          maxLength={15}
-                          pattern="^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$"
-                          title="Invalid GST Number."
-                          className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
-                          placeholder="Enter GSTIN number"
-                        />
-                      </div>
-                      <div className="w-full h-full flex flex-col justify-center items-center">
-                        <label
-                          htmlFor="gstin"
-                          className="w-full block text-sm font-medium text-ombase  "
-                        >
-                          City
-                        </label>
-                        <input
-                          type="text"
-                          id="gstin"
-                          name="gst"
-                          maxLength={15}
-                          pattern="^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$"
-                          title="Invalid GST Number."
-                          className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
-                          placeholder="Enter GSTIN number"
-                        />
-                      </div>
-                      <div className="w-full h-full flex flex-col justify-center items-center">
-                        <label
-                          htmlFor="gstin"
-                          className="w-full block text-sm font-medium text-ombase  "
-                        >
-                          Pincode
-                        </label>
-                        <input
-                          type="text"
-                          id="gstin"
-                          name="gst"
-                          maxLength={15}
-                          pattern="^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$"
-                          title="Invalid GST Number."
-                          className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
-                          placeholder="Enter GSTIN number"
-                        />
-                      </div>
-                    </div>
-                    <div className="w-full h-full gap-2 flex justify-center items-center">
-                      <div className="w-full h-full flex flex-col justify-center items-center">
-                        <label
-                          htmlFor="gstin"
-                          className="w-full block text-sm font-medium text-ombase  "
-                        >
-                          Email ID
-                        </label>
-                        <input
-                          type="text"
-                          id="gstin"
-                          name="gst"
-                          maxLength={15}
-                          pattern="^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$"
-                          title="Invalid GST Number."
-                          className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
-                          placeholder="Enter GSTIN number"
-                        />
-                      </div>
-                      <div className="w-full h-full flex flex-col justify-center items-center">
-                        <label
-                          htmlFor="gstin"
-                          className="w-full block text-sm font-medium text-ombase  "
-                        >
-                          Phone No.
-                        </label>
-                        <input
-                          type="text"
-                          id="gstin"
-                          name="gst"
-                          maxLength={15}
-                          pattern="^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$"
-                          title="Invalid GST Number."
-                          className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
-                          placeholder="Enter GSTIN number"
-                        />
-                      </div>
-                      <div className="w-full h-full flex flex-col justify-center items-center">
-                        <button className="btn bg-ombase btn-wide text-white">
-                          Register
-                        </button>
-                      </div>
-                    </div>
-                  </form> */}
                 </div>
               </div>
             )}
-
             {/* Section 2 Content */}
             {openTab === 2 && (
               <div className="w-ful h-[calc(100%-120px)] transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-l-4 border-ombase">
@@ -379,9 +162,9 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-[30%] ">
+      {/* <div className="w-full h-[30%] ">
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 };

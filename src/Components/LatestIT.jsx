@@ -22,11 +22,9 @@ const LatestIT = () => {
               />
             </figure>
             <div className="card-body bg-ombase text-white flex flex-col justify-between">
-              <h2 className="card-title">Ombase</h2>
-              <p>
-                A versatile tech OEM crafting an extensive array of computing
-                devices, from desktops and Chromebooks to all-in-ones, laptops,
-                workstations.
+              <h2 className="card-title line-clamp-3">What Makes Ombase Laptops Stand Out in the Market?</h2>
+              <p className="line-clamp-2">
+              Ombase laptops combine cutting-edge performance, premium build quality, and tailored features to meet the demands of professionals and power users alike.
               </p>
               <div className="card-actions justify-end">
                 <button className="btn btn-outline text-white">
@@ -46,11 +44,9 @@ const LatestIT = () => {
               />
             </figure>
             <div className="card-body bg-ombase text-white flex flex-col justify-between">
-              <h2 className="card-title">Ombase</h2>
+              <h2 className="card-title">AI and Cloud Computing</h2>
               <p>
-                A versatile tech OEM crafting an extensive array of computing
-                devices, from desktops and Chromebooks to all-in-ones, laptops,
-                workstations.
+              How Modern Servers Are Evolving.
               </p>
               <div className="card-actions justify-end">
                 <button className="btn btn-outline text-white">

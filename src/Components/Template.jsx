@@ -27,20 +27,20 @@ const Template = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row items-center p-10 overflow-hidden">
+    <div className="flex flex-col lg:flex-row items-center p-2 md:p-5 lg:p-10 overflow-hidden">
       {/* Left Side: Text */}
-      <div className="md:w-1/2 mb-8 md:mb-0">
-        <h2 className="text-xl sm:text-3xl font-bold mb-4">More from us!</h2>
-        <p className="text-xs sm:text-lg text-gray-700">
+      <div className="lg:w-1/2 md:mb-8 py-2">
+        <h2 className="text-xl sm:text-3xl font-bold sm:mb-4">More from us!</h2>
+        <p className="text-[9px] sm:text-lg text-gray-700">
           Discover a variety of things that showcase different concepts. Click
           the buttons to navigate through the images.
         </p>
       </div>
       {/* Right Side: Image Carousel */}
-      <div className="h-[300px] w-[420px] sm:h-auto md:w-1/2 flex flex-col justify-center overflow-hidden pl-5 ">
+      <div className="h-[300px] w-[420px] sm:h-auto md:w-full lg:w-1/2 flex flex-col justify-center overflow-hidden pl-5">
         {/* Image Row */}
         <div
-          className="flex gap-4 justify-center overflow-hidden rounded-s-2xl"
+          className="h-[75%] flex gap-4 justify-around rounded-s-2xl"
           style={{
             width: "199.98%",
             maxWidth: "199.98%",
@@ -67,7 +67,7 @@ const Template = () => {
         </div>
 
         {/* Buttons to navigate through images */}
-        <div className="flex justify-center gap-4 mt-4">
+        <div className="flex justify-center gap-4 md:mt-4">
           <button
             onClick={goToPrevious}
             className="px-6 py-2 btn btn-outline border-ombase text-ombase rounded-lg hover:bg-gray-700 hover:text-white shadow-md"

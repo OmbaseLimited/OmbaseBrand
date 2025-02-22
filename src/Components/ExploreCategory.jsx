@@ -5,23 +5,26 @@ import Workstation from "../Assets/explore-workstation.png";
 import MiniPC from "../Assets/explore-minipc.png";
 import AllInOne from "../Assets/explore-AIO.png";
 import Server from "../Assets/explore-server.png";
+import { Link } from "react-router-dom";
 
 const ExploreCategory = () => {
   return (
-    <div className="w-full h-full flex items-center justify-center py-5 ">
-      <div className="w-full sm:w-[80%] h-full flex flex-col sm:flex-row justify-center items-center gap-4">
-        <div className="w-full h-[200px] sm:w-1/2 sm:h-[350px] flex flex-col justify-between   sm:justify-around  bg-gradient-to-r from-zinc-600/30 from-20% sm:p-10 px-5 py-10">
+    <div className="w-full h-full flex items-center justify-center py-5">
+      <div className="w-full md:w-[95%] lg:w-[80%] h-full flex flex-col lg:flex-row justify-center items-center gap-4">
+        <div className="w-full h-[200px] lg:w-1/2 sm:h-[350px] flex flex-col justify-between   sm:justify-around  bg-gradient-to-r from-zinc-600/30 from-20% sm:p-10 px-5 py-10">
           {/* <p className="text-2xl font-bold text-white drop-shadow-md">
             Explore
           </p> */}
           <span className="text-stone-500 drop-shadow-md sm:text-3xl  ">
             From powerful performance to sleek designs, we have it all!
           </span>
+          {/* <Link to="/ExploreCategories"> */}
           <button className="btn btn-outline w-fit border-2 border-gray-200 text-white my-5 sm:my-0 drop-shadow-md hover:bg-ombase hover:border-white ">
             Explore
           </button>
+        {/* </Link> */}
         </div>
-        <div className="w-full sm:w-1/2 h-[350px] flex flex-col items-center justify-center gap-2">
+        <div className="w-full lg:w-1/2 h-[350px] flex flex-col items-center justify-center gap-2">
           <div className="w-full h-1/2 flex items-center justify-around gap-2">
             <div className="w-[80%] h-[80%] sm:w-full sm:h-full bg-gradient-to-l from-gray-100 flex justify-center items-center">
               <img
@@ -69,5 +72,4 @@ const ExploreCategory = () => {
     </div>
   );
 };
-
 export default ExploreCategory;

@@ -154,17 +154,17 @@ const OMBASENAVBAR = () => {
             className="text-gray-800 hover:text-blue-600"
           >
             Our Compnay
-          </button>
+          </button> */}
 
-          <Link to="/ContactUS" className="text-gray-800 hover:text-blue-600">
+          {/* <Link to="/ContactUS" className="text-gray-800 hover:text-blue-600">
             Contact
-          </Link>
+          </Link> */}
 
           <Link to="/AarivServer">
             <button className="btn">Aariv Server</button>
-          </Link> */}
-          <p>Contact Us:</p>
-          +91-1800-267-1919
+          </Link>
+          {/* <p>Contact Us:</p>
+          +91-1800-267-1919 */}
         </div>
       </div>
 

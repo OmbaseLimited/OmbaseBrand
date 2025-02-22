@@ -5,7 +5,7 @@ const PartnerPortal = () => {
 
   return (
     <div
-      className="w-full font-sans h-full flex items-center justify-around"
+      className="w-full font-sans h-full flex flex-col lg:flex-row lg:items-center lg:justify-around"
       style={{
         backgroundImage: `url(${dna})`,
         backgroundSize: "cover", // Ensures the image covers the entire div
@@ -13,15 +13,15 @@ const PartnerPortal = () => {
         backgroundRepeat: "no-repeat", // Prevents the image from repeating
       }}
     >
-      <p className="h-[5%] text-white text-4xl p-10 drop-shadow-md">
+      <p className="h-[2%] flex items-center md:h-[5%] text-white md:text-4xl p-4 md:p-10 drop-shadow-md">
         Partner Showcase
       </p>
-      <div className="w-[65%] h-[80%]">
+      <div className="w-full lg:w-[65%] h-[80%] p-2 lg:p-0">
         <div className="w-full h-full mx-auto ">
-          <div className="w-fit h-[80px] mb-4 flex space-x-4 p-2 bg-white rounded-lg shadow-md">
+          <div className="w-full h-[60px] mb-4 p-2 flex md:space-x-4 py-2 lg:p-2 bg-white rounded-lg shadow-md">
             <button
               onClick={() => setOpenTab(1)}
-              className={`flex-1 text-nowrap  py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300 ${
+              className={`flex-1 text-nowrap px-1 py-2 rounded-md focus:outline-none focus:shadow-outline-blue transition-all text-center duration-300 text-[8px] md:text-[14px] w-fit overflow-hidden ${
                 openTab === 1 ? "bg-ombase text-white" : ""
               }`}
             >
@@ -29,7 +29,7 @@ const PartnerPortal = () => {
             </button>
             <button
               onClick={() => setOpenTab(2)}
-              className={`flex-1 text-nowrap py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300 ${
+              className={`flex-1 text-nowrap px-1 py-2 rounded-md focus:outline-none focus:shadow-outline-blue transition-all text-center duration-300 text-[8px] md:text-[14px] w-fit overflow-hidden ${
                 openTab === 2 ? "bg-ombase text-white" : ""
               }`}
             >
@@ -37,7 +37,7 @@ const PartnerPortal = () => {
             </button>
             <button
               onClick={() => setOpenTab(3)}
-              className={`flex-1 py-2 px-4 text-nowrap rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300 ${
+              className={`flex-1 text-nowrap px-1 py-2 rounded-md focus:outline-none focus:shadow-outline-blue transition-all text-center duration-300 text-[8px] md:text-[14px] w-fit overflow-hidden ${
                 openTab === 3 ? "bg-ombase text-white" : ""
               }`}
             >
@@ -47,9 +47,9 @@ const PartnerPortal = () => {
 
           {/* Section 1 Content */}
           {openTab === 1 && (
-            <div className="w-ful h-[calc(100%-80px)] transition-all duration-300 bg-white p-4 rounded-lg  shadow-md  border-l-4 border-ombase flex justify-around">
+            <div className="w-ful h-[calc(100%-60px)] transition-all duration-300 bg-white p-4 rounded-lg  shadow-md  border-l-4 border-ombase flex justify-around">
               <div className="w-full h-full flex flex-col items-center justify-center">
-                <h2 className="w-full h-[10%] text-2xl font-semibold mb-2 text-ombase">
+                <h2 className="w-full h-[10%] text-sm md:text-2xl font-semibold md:`mb-2 text-ombase">
                   Partner Registration
                 </h2>
                 <form
@@ -60,7 +60,7 @@ const PartnerPortal = () => {
                     <div className="w-[100%] h-full flex flex-col justify-center items-center">
                       <label
                         htmlFor="gstin"
-                        className="w-full block text-sm font-medium text-ombase  "
+                        className="w-full block text-[8px] md:text-sm font-medium text-ombase  "
                       >
                         GSTIN No.
                       </label>
@@ -71,14 +71,14 @@ const PartnerPortal = () => {
                         maxLength={15}
                         pattern="^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$"
                         title="Invalid GST Number."
-                        className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                        className="input input-sm md:input-md placeholder:text-[8px] md:placeholder:text-sm mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
                         placeholder="Enter GSTIN number"
                       />
                     </div>
                     <div className="w-[100%] h-full flex flex-col justify-center items-center">
                       <label
                         htmlFor="gstin"
-                        className="w-full block text-sm font-medium text-ombase  "
+                        className="w-full block text-[8px] md:text-sm font-medium text-ombase  "
                       >
                         PAN No.
                       </label>
@@ -89,14 +89,14 @@ const PartnerPortal = () => {
                         maxLength={15}
                         pattern="^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$"
                         title="Invalid GST Number."
-                        className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                        className="input input-sm md:input-md placeholder:text-[8px] md:placeholder:text-sm mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
                         placeholder="Enter GSTIN number"
                       />
                     </div>
                     <div className="w-full h-full flex flex-col justify-center items-center">
                       <label
                         htmlFor="gstin"
-                        className="w-full block text-sm font-medium text-ombase  "
+                        className="w-full block text-[8px] md:text-sm font-medium text-ombase  "
                       >
                         Entity Type
                       </label>
@@ -107,7 +107,7 @@ const PartnerPortal = () => {
                         maxLength={15}
                         pattern="^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$"
                         title="Invalid GST Number."
-                        className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                        className="input input-sm md:input-md placeholder:text-[8px] md:placeholder:text-sm mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
                         placeholder="Enter GSTIN number"
                       />
                     </div>
@@ -117,7 +117,7 @@ const PartnerPortal = () => {
                     <div className="w-full h-full flex flex-col justify-center items-center">
                       <label
                         htmlFor="gstin"
-                        className="w-full block text-sm font-medium text-ombase  "
+                        className="w-full block text-[8px] md:text-sm font-medium text-ombase  "
                       >
                         Company Name
                       </label>
@@ -128,14 +128,14 @@ const PartnerPortal = () => {
                         maxLength={15}
                         pattern="^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$"
                         title="Invalid GST Number."
-                        className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                        className="input input-sm md:input-md placeholder:text-[8px] md:placeholder:text-sm mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
                         placeholder="Enter GSTIN number"
                       />
                     </div>
                     <div className="w-full h-full flex flex-col justify-center items-center">
                       <label
                         htmlFor="gstin"
-                        className="w-full block text-sm font-medium text-ombase  "
+                        className="w-full block text-[8px] md:text-sm font-medium text-ombase  "
                       >
                         Legal Name
                       </label>
@@ -146,7 +146,7 @@ const PartnerPortal = () => {
                         maxLength={15}
                         pattern="^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$"
                         title="Invalid GST Number."
-                        className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                        className="input input-sm md:input-md placeholder:text-[8px] md:placeholder:text-sm mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
                         placeholder="Enter GSTIN number"
                       />
                     </div>
@@ -155,7 +155,7 @@ const PartnerPortal = () => {
                     <div className="w-full h-full flex flex-col justify-center items-center">
                       <label
                         htmlFor="gstin"
-                        className="w-full block text-sm font-medium text-ombase  "
+                        className="w-full block text-[8px] md:text-sm font-medium text-ombase  "
                       >
                         Address
                       </label>
@@ -166,7 +166,7 @@ const PartnerPortal = () => {
                         maxLength={15}
                         pattern="^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$"
                         title="Invalid GST Number."
-                        className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                        className="input input-sm md:input-md placeholder:text-[8px] md:placeholder:text-sm mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
                         placeholder="Enter GSTIN number"
                       />
                     </div>
@@ -175,7 +175,7 @@ const PartnerPortal = () => {
                     <div className="w-full h-full flex flex-col justify-center items-center">
                       <label
                         htmlFor="gstin"
-                        className="w-full block text-sm font-medium text-ombase  "
+                        className="w-full block text-[8px] md:text-sm font-medium text-ombase  "
                       >
                         State
                       </label>
@@ -186,14 +186,14 @@ const PartnerPortal = () => {
                         maxLength={15}
                         pattern="^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$"
                         title="Invalid GST Number."
-                        className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                        className="input input-sm md:input-md placeholder:text-[8px] md:placeholder:text-sm mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
                         placeholder="Enter GSTIN number"
                       />
                     </div>
                     <div className="w-full h-full flex flex-col justify-center items-center">
                       <label
                         htmlFor="gstin"
-                        className="w-full block text-sm font-medium text-ombase  "
+                        className="w-full block text-[8px] md:text-sm font-medium text-ombase  "
                       >
                         City
                       </label>
@@ -204,14 +204,14 @@ const PartnerPortal = () => {
                         maxLength={15}
                         pattern="^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$"
                         title="Invalid GST Number."
-                        className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                        className="input input-sm md:input-md placeholder:text-[8px] md:placeholder:text-sm mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
                         placeholder="Enter GSTIN number"
                       />
                     </div>
                     <div className="w-full h-full flex flex-col justify-center items-center">
                       <label
                         htmlFor="gstin"
-                        className="w-full block text-sm font-medium text-ombase  "
+                        className="w-full block text-[8px] md:text-sm font-medium text-ombase  "
                       >
                         Pincode
                       </label>
@@ -222,7 +222,7 @@ const PartnerPortal = () => {
                         maxLength={15}
                         pattern="^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$"
                         title="Invalid GST Number."
-                        className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                        className="input input-sm md:input-md placeholder:text-[8px] md:placeholder:text-sm mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
                         placeholder="Enter GSTIN number"
                       />
                     </div>
@@ -231,7 +231,7 @@ const PartnerPortal = () => {
                     <div className="w-full h-full flex flex-col justify-center items-center">
                       <label
                         htmlFor="gstin"
-                        className="w-full block text-sm font-medium text-ombase  "
+                        className="w-full block text-[8px] md:text-sm font-medium text-ombase  "
                       >
                         Email ID
                       </label>
@@ -242,14 +242,14 @@ const PartnerPortal = () => {
                         maxLength={15}
                         pattern="^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$"
                         title="Invalid GST Number."
-                        className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                        className="input input-sm md:input-md placeholder:text-[8px] md:placeholder:text-sm mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
                         placeholder="Enter GSTIN number"
                       />
                     </div>
                     <div className="w-full h-full flex flex-col justify-center items-center">
                       <label
                         htmlFor="gstin"
-                        className="w-full block text-sm font-medium text-ombase  "
+                        className="w-full block text-[8px] md:text-sm font-medium text-ombase  "
                       >
                         Phone No.
                       </label>
@@ -260,12 +260,12 @@ const PartnerPortal = () => {
                         maxLength={15}
                         pattern="^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$"
                         title="Invalid GST Number."
-                        className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                        className="input input-sm md:input-md placeholder:text-[8px] md:placeholder:text-sm mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
                         placeholder="Enter GSTIN number"
                       />
                     </div>
-                    <div className="w-full h-full flex flex-col justify-center items-center">
-                      <button className="btn bg-ombase btn-wide text-white">
+                    <div className="w-full h-full flex justify-center items-end">
+                      <button className="btn bg-ombase text-white btn-sm h-[80%] w-full">
                         Register
                       </button>
                     </div>

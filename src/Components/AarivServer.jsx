@@ -28,13 +28,10 @@ import sound from "../Assets/Server/Sound.png";
 const AarivServer = () => {
   return (
     <div className="w-full h-full">
-      <div className="w-full h-[6%] bg-ombase overflow-hidden">
+      <div className="w-full h-[6%] md:h-[4%] lg:h-[8%] 2xl:h-[6%] bg-ombase overflow-hidden">
         <OMBASENAVBAR />
       </div>
-      <div class="w-full border-2 overflow-hidden whitespace-nowrap bg-red-500 text-white py-4 flex gap-10">
-        {/* <span class="w-full inline-block  text-xl font-bold animate-marquee">
-          Website under upgradation
-        </span>
+      {/* <div class="w-full border-2 overflow-hidden whitespace-nowrap bg-red-500 text-white py-4 flex gap-10">
         <span class="w-full inline-block  text-xl font-bold animate-marquee">
           Website under upgradation
         </span>
@@ -43,14 +40,17 @@ const AarivServer = () => {
         </span>
         <span class="w-full inline-block  text-xl font-bold animate-marquee">
           Website under upgradation
-        </span> */}
+        </span>
+        <span class="w-full inline-block  text-xl font-bold animate-marquee">
+          Website under upgradation
+        // </span>
         <marquee  direction="left" scrollamount="10" class="text-xl font-bold text-white">
         Website under upgradation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         Website under upgradation
         
 </marquee>
 
-      </div>
+      </div> */}
      
 
       <div className="w-full h-[94%] md:p-10 ">
@@ -510,7 +510,7 @@ const AarivServer = () => {
           <img src={eye} alt="EyeLogo" className="w-full h-full rounded" />
         </div>
       // </div> */}
- <div className="w-full h-[30%] border-2 hidden md:block"><Footer /></div>
+ <div className="w-full h-fit lg:h-[30%] border-2 "><Footer /></div>
     </div>
   );
 };

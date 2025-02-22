@@ -10,4 +10,11 @@
   transition: 0.2s ease-in-out;
   font-family: "Comfortaa", cursive, sans-serif;
   user-select: none;
+  -webkit-user-drag: none;
+  user-drag:none;
+}
+
+
+.collapse-toggle:checked + .collapse-title .collapse-arrow {
+  transform: rotate(180deg); /* Rotate arrow when open */
 }

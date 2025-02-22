@@ -9,21 +9,22 @@ import IPCentre from "../src/Components/IPCentre";
 import IPStation from "../src/Components/IPStation";
 import MiniPc from "../src/Components/MiniPc";
 import Workstation from "../src/Components/Workstation";
+import ExploreCategories from "./Components/ExploreCategories";
 
 const Main = () => {
   return (
     <BrowserRouter>
       <Routes>
-        {/* <Route path="/" element={<Ombase />} /> */}
-        <Route path="/" element={<AarivServer />} />
-        {/* <Route path="/AarivServer" element={<AarivServer />} />
+        <Route path="/" element={<Ombase />} />
+        <Route path="/AarivServer" element={<AarivServer />} />
         <Route path="/ContactUS" element={<ContactUs />} />
         <Route path="/multiselect" element={<MultiSelectDropdown />} />
         <Route path="/IPBook" element={<IPBook />} />
         <Route path="/IPCentre" element={<IPCentre />} />
         <Route path="/IPStation" element={<IPStation />} />
         <Route path="/MiniPc" element={<MiniPc />} />
-        <Route path="/Workstation" element={<Workstation />} /> */}
+        <Route path="/Workstation" element={<Workstation />} />
+        <Route path="/ExploreCategories" element={<ExploreCategories />} />
       </Routes>
     </BrowserRouter>
   );

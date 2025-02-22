@@ -16,10 +16,10 @@ const MultiSelectDropdown = ({ options }) => {
   };
 
   return (
-    <div className="relative inline-block w-64">
+    <div className="relative inline-block">
       {/* Dropdown Button */}
       <button
-        className="w-full px-4 py-2 text-left bg-white border rounded shadow-md focus:outline-none"
+        className="w-full px-4 py-2 text-left bg-white border rounded shadow-md focus:outline-none text-[8px] md:text-[10px] lg:text-[14px] "
         onClick={toggleDropdown}
       >
         Select Products
@@ -32,7 +32,7 @@ const MultiSelectDropdown = ({ options }) => {
           {options.map((option) => (
             <label
               key={option}
-              className="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-100"
+              className="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-100 text-[8px] md:text-[10px] "
             >
               <input
                 type="checkbox"
