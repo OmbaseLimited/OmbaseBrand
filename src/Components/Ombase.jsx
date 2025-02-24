@@ -53,9 +53,9 @@ function Ombase() {
       <div className="w-full h-[100%] md:h-[40%] lg:h-[80%] 2xl:h-[70%] ">
         <CaseStudies />
       </div>
-      <div className="w-full h-[90%] md:h-[60%] lg:h-[80%] 2xl:h-[70%] ">
+      {/* <div className="w-full h-[90%] md:h-[60%] lg:h-[80%] 2xl:h-[70%] ">
         <PartnerPortal />
-      </div>
+      </div> */}
       <div className="w-full h-[100%] md:h-[40%] lg:h-[80%] 2xl:h-[70%] ">
         <ContactUs />
       </div>
